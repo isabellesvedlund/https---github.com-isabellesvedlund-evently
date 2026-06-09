@@ -413,14 +413,3 @@ footer {
 /* ==========================================
     COLOR COMMENTS
    ========================================== */
-
-"editor.tokenColorCustomizations": {
-  "textMateRules": [
-    {
-      "scope": "comment",
-      "settings": {
-        "foreground": "#ff4500"
-      }
-    }
-  ]
-}
