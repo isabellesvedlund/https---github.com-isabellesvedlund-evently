@@ -335,14 +335,13 @@ footer {
     gap: 3rem;
 }
 
-
 .btn-primary {
     background: var(--purple-600);
     color: white;
 
     border: none;
 
-    padding: .8rem 1.5rem;
+    padding: 0.8rem 1.5rem;
 
     border-radius: 6px;
 
@@ -356,7 +355,7 @@ footer {
 
     border: 1px solid var(--purple-600);
 
-    padding: .8rem 1.5rem;
+    padding: 0.8rem 1.5rem;
 
     border-radius: 6px;
 
