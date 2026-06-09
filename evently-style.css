@@ -355,6 +355,24 @@ footer {
     cursor: pointer;
 }
 
+.menu-btn {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+}
+
+.icon-btn {
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
 .btn-secondary {
     background: transparent;
 
@@ -367,6 +385,12 @@ footer {
     border-radius: 6px;
 
     cursor: pointer;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 /* ==========================================
@@ -413,6 +437,14 @@ footer {
 
     .footer-grid {
         grid-template-columns: 1fr;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .btn-primary {
+        display: none;
     }
 }
 
