@@ -315,6 +315,26 @@ footer {
     gap: 3rem;
 }
 
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 1.5rem 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav a {
+    font-weight: 500;
+}
+
 /* ==========================================
     MEDIA QUERY - RESPONSIVE ADJUSTMENTS
    ========================================== */
