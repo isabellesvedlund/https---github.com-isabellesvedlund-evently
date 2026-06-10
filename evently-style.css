@@ -75,6 +75,12 @@
 
 .nav a {
     font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--gray-600);
+}
+
+.nav a:hover {
+    color: var(--purple-600);
 }
 
 * {
@@ -221,24 +227,18 @@ p {
     max-width: 1200px;
     margin: 0 auto;
     padding-inline: 1rem;
-    padding-block: 5rem;
+    padding-block: 4rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-}
-
-.hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 3rem;
     align-items: center;
 }
 
 .hero-content h1 {
-    font-size: clamp(4rem, 7vw, 5.5rem);
+    font-size: clamp(3rem, 5vw, 4.5rem);
     font-weight: 800;
-    line-height: 0.95;
+    line-height: 1;
+    margin-top: 1rem;
 }
 
 .hero-content p {
@@ -271,12 +271,12 @@ p {
 
 .hero-gallery img:first-child {
     grid-row: span 2;
-    height: 520px;
+    height: 420px;
 }
 
 .hero-gallery img:nth-child(2),
 .hero-gallery img:nth-child(3) {
-    height: 250px;
+    height: 200px;
 }
 
 /* ==========================================
@@ -289,10 +289,14 @@ p {
 }
 
 .search-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
     background: white;
     padding: 2rem;
-    border-radius: 24px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.05),
+        0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
 .search-wrapper h2 {
@@ -358,17 +362,14 @@ p {
     padding: 1rem;
 }
 
+.event-info p {
+    color: var(--gray-600);
+}
+
 .events-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-}
-
-.event-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid var(--gray-100);
 }
 
 .event-card img {
@@ -379,6 +380,20 @@ p {
 
 .event-info {
     padding: 1rem;
+}
+
+.event-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 1rem;
+}
+
+.event-info h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
 }
 
 /* ==========================================
@@ -412,6 +427,14 @@ p {
                     FEATURES
    ========================================== */
 
+.feature {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
 .features {
     background: #eef7f2;
     padding: 5rem 0;
@@ -422,18 +445,16 @@ p {
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     text-align: center;
-}
-
-.feature {
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    text-align: center;
+    align-items: stretch;
 }
 
 .feature-icon {
     font-size: 2rem;
     margin-bottom: 1rem;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
 }
 
 /* ==========================================
@@ -443,13 +464,14 @@ p {
 footer {
     background: #040826;
     color: white;
-    padding: 5rem 0;
+    padding: 6rem 0;
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 3rem;
+    align-items: start;
 }
 
 footer h3,
@@ -475,7 +497,7 @@ footer p {
     background: var(--purple-600);
     color: white;
     border: none;
-    padding: 1rem 1.5rem;
+    padding: 0.95rem 1.6rem;
     border-radius: 12px;
     font-weight: 600;
     cursor: pointer;
@@ -518,6 +540,27 @@ footer p {
 /* ==========================================
     MEDIA QUERY - RESPONSIVE ADJUSTMENTS
    ========================================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
     .nav {
         display: none;
@@ -563,10 +606,6 @@ footer p {
 
     .menu-btn {
         display: block;
-    }
-
-    .btn-primary {
-        display: none;
     }
 }
 
