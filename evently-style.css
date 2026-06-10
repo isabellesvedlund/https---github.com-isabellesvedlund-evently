@@ -100,10 +100,6 @@ ul {
     list-style: none;
 }
 
-html {
-    color-scheme: dark light;
-}
-
 /*** Global/base styles ***/
 
 .header {
@@ -240,10 +236,9 @@ p {
 }
 
 .hero-content h1 {
-    font-size: clamp(3rem, 6vw, 5rem);
+    font-size: clamp(4rem, 7vw, 5.5rem);
     font-weight: 800;
     line-height: 0.95;
-    margin-block: 1rem;
 }
 
 .hero-content p {
@@ -268,27 +263,20 @@ p {
 
 .hero-gallery img {
     width: 100%;
-
     height: 100%;
-
     object-fit: cover;
-
     border-radius: 20px;
-
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
 .hero-gallery img:first-child {
     grid-row: span 2;
-    height: 420px;
+    height: 520px;
 }
 
-.hero-gallery img:nth-child(2) {
-    height: 200px;
-}
-
+.hero-gallery img:nth-child(2),
 .hero-gallery img:nth-child(3) {
-    height: 200px;
+    height: 250px;
 }
 
 /* ==========================================
@@ -301,8 +289,6 @@ p {
 }
 
 .search-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
     background: white;
     padding: 2rem;
     border-radius: 24px;
@@ -333,9 +319,7 @@ p {
    ========================================== */
 
 .popular-events {
-    padding: 5rem 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 5rem 0;
 }
 
 .section-header {
@@ -360,7 +344,8 @@ p {
 }
 
 .event-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .event-card img {
@@ -442,8 +427,8 @@ p {
 .feature {
     background: white;
     padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    text-align: center;
 }
 
 .feature-icon {
