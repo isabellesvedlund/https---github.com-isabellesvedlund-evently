@@ -229,12 +229,12 @@ p {
    ========================================== */
 
 .hero {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 4rem 1rem 5rem;
+    padding: 4rem 2rem 5rem;
     display: grid;
-    grid-template-columns: 1.05fr 0.95fr;
-    gap: 4rem;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 3rem;
     align-items: center;
 }
 
