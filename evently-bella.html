@@ -24,7 +24,20 @@
         <!-- ========================================== -->
         <header class="header">
             <div class="logo">
-                <span class="logo-icon">✦</span>
+                <span class="logo-icon">
+                    <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M12 2c-.4 2.3-1.8 3.7-4.1 4.1C10.2 6.5 11.6 7.9 12 10.2c.4-2.3 1.8-3.7 4.1-4.1-2.3-.4-3.7-1.8-4.1-4.1zM6 10c-.3 1.7-1.3 2.7-3 3 1.7.3 2.7 1.3 3 3 .3-1.7 1.3-2.7 3-3-1.7-.3-2.7-1.3-3-3zm12 2c-.3 1.7-1.3 2.7-3 3 1.7.3 2.7 1.3 3 3 .3-1.7 1.3-2.7 3-3-1.7-.3-2.7-1.3-3-3z"
+                        />
+                    </svg>
+                </span>
                 <span class="logo-text">Evently</span>
             </div>
 
@@ -37,10 +50,41 @@
             </nav>
 
             <div class="header-actions">
-                <button class="icon-btn">🔍</button>
+                <button class="icon-btn" aria-label="Sök">
+                    <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
 
                 <button class="btn-primary">Skapa konto</button>
-                <button class="menu-btn">☰</button>
+                <button class="menu-btn" aria-label="Öppna meny">
+                    <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <line x1="4" y1="12" x2="20" y2="12"></line>
+                        <line x1="4" y1="6" x2="20" y2="6"></line>
+                        <line x1="4" y1="18" x2="20" y2="18"></line>
+                    </svg>
+                </button>
             </div>
         </header>
 
@@ -83,13 +127,22 @@
                     <div class="search-wrapper">
                         <h2>Hitta rätt evenemang</h2>
                         <form class="search-form">
-                            <input type="text" placeholder="Sök på t.ex. konsert, yoga..." />
+                            <label>
+                                Sökord
+                                <input type="text" placeholder="Sök på t.ex. konsert, yoga..." />
+                            </label>
 
-                            <select>
-                                <option>Alla kategorier</option>
-                            </select>
+                            <label>
+                                Kategori
+                                <select>
+                                    <option>Alla kategorier</option>
+                                </select>
+                            </label>
 
-                            <input type="date" />
+                            <label>
+                                Datum
+                                <input type="date" />
+                            </label>
 
                             <button class="btn-primary">Sök evenemang</button>
                         </form>
@@ -111,7 +164,7 @@
                         <!-- EVENT 1 -->
                         <article class="event-card">
                             <img src="bella.png" alt="Konsert" />
-
+                            <button class="favorite-btn">♡</button>
                             <div class="event-info">
                                 <div class="event-meta">
                                     <span class="tag concert">KONSERT</span>
@@ -129,7 +182,7 @@
                         <!-- EVENT 2 -->
                         <article class="event-card">
                             <img src="bella.png" alt="Marknad" />
-
+                            <button class="favorite-btn">♡</button>
                             <div class="event-info">
                                 <div class="event-meta">
                                     <span class="tag market">MARKNAD</span>
@@ -147,7 +200,7 @@
                         <!-- EVENT 3 -->
                         <article class="event-card">
                             <img src="bella.png" alt="Workshop" />
-
+                            <button class="favorite-btn">♡</button>
                             <div class="event-info">
                                 <div class="event-meta">
                                     <span class="tag workshop">WORKSHOP</span>
@@ -164,10 +217,10 @@
                         <!-- EVENT 4 -->
                         <article class="event-card">
                             <img src="bella.png" alt="Familj" />
-
+                            <button class="favorite-btn">♡</button>
                             <div class="event-info">
                                 <div class="event-meta">
-                                    <span class="tag market">FAMILJ</span>
+                                    <span class="tag familj">FAMILJ</span>
                                     <!-------------------Datum tagg -->
                                     <span>25 maj</span>
                                 </div>
@@ -181,10 +234,10 @@
                         <!-- EVENT 5 -->
                         <article class="event-card">
                             <img src="bella.png" alt="Sport" />
-
+                            <button class="favorite-btn">♡</button>
                             <div class="event-info">
                                 <div class="event-meta">
-                                    <span class="tag market">SPORT</span>
+                                    <span class="tag sport">SPORT</span>
                                     <!-------------------Datum tagg -->
                                     <span>25 maj</span>
                                 </div>
@@ -198,7 +251,7 @@
                         <!-- EVENT 6 -->
                         <article class="event-card">
                             <img src="bella.png" alt="Konsert" />
-
+                            <button class="favorite-btn">♡</button>
                             <div class="event-info">
                                 <div class="event-meta">
                                     <span class="tag market">KONSERT</span>
