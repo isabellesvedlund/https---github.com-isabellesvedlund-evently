@@ -603,6 +603,25 @@ footer p {
 @media (max-width: 1024px) {
     .hero {
         grid-template-columns: 1fr;
+        max-width: 760px;
+        gap: 3rem;
+        padding-top: 3.5rem;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content p {
+        margin-inline: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+    .hero-gallery {
+        max-width: 640px;
+        margin-inline: auto;
     }
 
     .events-grid {
@@ -637,26 +656,42 @@ footer p {
         gap: 2rem;
     }
 
+    .hero-content {
+        text-align: left;
+    }
+
+    .hero-content p {
+        margin-inline: 0;
+    }
+
+    .hero-buttons {
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
+        width: 100%;
+    }
+
     .hero-content h1 {
-        font-size: 2.4rem;
+        font-size: 2.8rem;
+        line-height: 1;
+        letter-spacing: -0.04em;
     }
 
     .hero-gallery {
         grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
     }
 
     .hero-gallery img:first-child {
         grid-row: auto;
-        height: 120px;
+        height: 110px;
     }
 
     .hero-gallery img:nth-child(2),
     .hero-gallery img:nth-child(3) {
-        height: 120px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
+        height: 110px;
     }
 
     .search-form {
