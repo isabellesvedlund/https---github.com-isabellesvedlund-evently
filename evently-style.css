@@ -41,17 +41,6 @@
     Basic reset & typography
    ========================================== */
 
-.header {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1.5rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--gray-100);
-    background: white;
-}
-
 .logo {
     display: flex;
     align-items: center;
@@ -117,6 +106,17 @@ html {
 
 /*** Global/base styles ***/
 
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-100);
+    background: white;
+}
+
 body {
     font-family: var(--font-inter);
     color: var(--gray-900);
@@ -159,6 +159,12 @@ p {
 /* ==========================================
     CONTENT GRID LAYOUT & UTILITY CLASSES
    ========================================== */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-inline: 1rem;
+}
 
 /* Kevin Powell's content-grid layout pattern */
 .content-grid {
