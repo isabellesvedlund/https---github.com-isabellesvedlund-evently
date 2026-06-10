@@ -44,12 +44,39 @@
 .header {
     max-width: 1200px;
     margin: 0 auto;
-
     padding: 1.5rem 1rem;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid var(--gray-100);
+    background: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-icon {
+    color: var(--purple-600);
+    font-size: 1.5rem;
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: var(--purple-100);
+    color: var(--purple-600);
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .nav {
@@ -129,6 +156,10 @@ p {
     background: var(--purple-400);
 }
 
+/* ==========================================
+    CONTENT GRID LAYOUT & UTILITY CLASSES
+   ========================================== */
+
 /* Kevin Powell's content-grid layout pattern */
 .content-grid {
     --padding-inline: calc(var(--spacing) * 6);
@@ -180,6 +211,10 @@ p {
     border: 0;
 }
 
+/* ==========================================
+                    HERO
+   ========================================== */
+
 .hero {
     max-width: 1200px;
     margin: 0 auto;
@@ -206,8 +241,11 @@ p {
 }
 
 .hero-content p {
-    max-width: 55ch;
+    max-width: 50ch;
     color: var(--gray-600);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-top: 1rem;
 }
 
 .hero-buttons {
@@ -224,9 +262,14 @@ p {
 
 .hero-gallery img {
     width: 100%;
+
     height: 100%;
+
     object-fit: cover;
-    border-radius: 12px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
 .hero-gallery img:first-child {
@@ -242,6 +285,10 @@ p {
     height: 200px;
 }
 
+/* ==========================================
+                    SEARCH
+   ========================================== */
+
 .search-section {
     background: var(--purple-100);
     padding: 3rem 0;
@@ -250,7 +297,14 @@ p {
 .search-wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    padding-inline: 1rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.search-wrapper h2 {
+    margin-bottom: 1.5rem;
 }
 
 .search-form {
@@ -258,6 +312,19 @@ p {
     grid-template-columns: 2fr 1.5fr 1.5fr auto;
     gap: 1rem;
 }
+
+.search-form input,
+.search-form select {
+    padding: 1rem;
+
+    border: 1px solid var(--gray-300);
+
+    border-radius: 12px;
+}
+
+/* ==========================================
+                    EVENTS
+   ========================================== */
 
 .popular-events {
     padding: 5rem 1rem;
@@ -280,9 +347,14 @@ p {
 
 .event-card {
     background: white;
-    border-radius: 12px;
+    border-radius: 20px;
     overflow: hidden;
-    border: 1px solid var(--gray-100);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
 }
 
 .event-card img {
@@ -318,6 +390,37 @@ p {
     padding: 1rem;
 }
 
+/* ==========================================
+                      TAGS
+   ========================================== */
+
+.tag {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.concert {
+    background: var(--pink-100);
+    color: var(--pink-800);
+}
+
+.market {
+    background: var(--orange-100);
+    color: var(--orange-800);
+}
+
+.workshop {
+    background: var(--blue-100);
+    color: var(--blue-800);
+}
+
+/* ==========================================
+                    FEATURES
+   ========================================== */
+
 .features {
     background: #eef7f2;
     padding: 5rem 0;
@@ -329,6 +432,22 @@ p {
     gap: 3rem;
     text-align: center;
 }
+
+.feature {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* ==========================================
+                    FOOTER
+   ========================================== */
 
 footer {
     background: #040826;
@@ -342,48 +461,60 @@ footer {
     gap: 3rem;
 }
 
+footer h3,
+footer h4 {
+    margin-bottom: 1rem;
+}
+
+footer li {
+    margin-bottom: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+}
+
+/* ==========================================
+    BUTTONS & INTERACTIVE ELEMENTS
+   ========================================== */
+
 .btn-primary {
     background: var(--purple-600);
     color: white;
-
     border: none;
-
-    padding: 0.8rem 1.5rem;
-
-    border-radius: 6px;
-
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: var(--purple-800);
 }
 
 .menu-btn {
     display: none;
-
     border: none;
     background: transparent;
-
     font-size: 1.5rem;
-
     cursor: pointer;
 }
 
 .icon-btn {
     border: none;
     background: transparent;
-
     cursor: pointer;
 }
 
 .btn-secondary {
-    background: transparent;
-
-    color: var(--purple-600);
-
-    border: 1px solid var(--purple-600);
-
-    padding: 0.8rem 1.5rem;
-
-    border-radius: 6px;
-
+    background: white;
+    border: 1px solid var(--gray-300);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 600;
     cursor: pointer;
 }
 
