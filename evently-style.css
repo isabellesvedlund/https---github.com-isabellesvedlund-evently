@@ -109,8 +109,9 @@ ul {
 /*** Global/base styles ***/
 
 .header {
+    width: 100%;
     margin: 0 auto;
-    padding: 1.25rem 1rem;
+    padding: 1.25rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
