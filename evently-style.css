@@ -236,12 +236,13 @@ p {
     display: grid;
     grid-template-columns: 1fr 1.1fr;
     gap: 5rem;
-    align-items: center;
+    align-items: start;
 }
 
 .hero-content {
     padding-block: 1rem;
     min-width: 0;
+    padding-top: 3rem;
 }
 
 .hero-content h1 {
