@@ -365,13 +365,25 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.25rem;
+}
+
+.section-header h2 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+.section-header a {
+    color: var(--purple-600);
+    font-weight: 700;
+    font-size: 0.95rem;
 }
 
 .events-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 1.75rem;
 }
 
 .event-card {
@@ -402,20 +414,10 @@ p {
     color: var(--gray-600);
 }
 
-.events-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-}
-
 .event-card img {
     height: 220px;
     width: 100%;
     object-fit: cover;
-}
-
-.event-info {
-    padding: 1rem;
 }
 
 .event-meta {
