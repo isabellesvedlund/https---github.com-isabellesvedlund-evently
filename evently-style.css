@@ -396,18 +396,18 @@ p {
 }
 
 .event-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .event-card img {
     width: 100%;
-    height: 190px;
+    height: 205px;
     object-fit: cover;
 }
 
 .event-info {
-    padding: 1rem;
+    padding: 1.15rem 1.2rem 1.25rem;
 }
 
 .event-info p {
@@ -429,8 +429,9 @@ p {
 }
 
 .event-info h3 {
-    font-size: 1.1rem;
-    font-weight: 700;
+    font-size: 1.08rem;
+    font-weight: 800;
+    line-height: 1.25;
     margin-bottom: 0.5rem;
 }
 
