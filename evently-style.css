@@ -584,9 +584,12 @@ footer p {
     background: transparent;
     color: var(--purple-600);
     cursor: pointer;
-    display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.icon-btn {
+    display: flex;
 }
 
 .btn-secondary {
@@ -637,6 +640,10 @@ footer p {
 .concert {
     background: var(--purple-100);
     color: var(--purple-600);
+}
+
+.menu-btn {
+    display: none;
 }
 
 /* ==========================================
