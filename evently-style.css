@@ -392,12 +392,12 @@ p {
     border-radius: 6px;
     overflow: hidden;
     border: 1px solid var(--gray-100);
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 .event-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.12);
 }
 
 .event-card img {
