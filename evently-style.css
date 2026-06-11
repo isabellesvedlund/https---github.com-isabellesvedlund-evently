@@ -234,8 +234,8 @@ p {
     margin: 0 auto;
     padding: 4rem 1rem 5rem;
     display: grid;
-    grid-template-columns: 1.05fr 0.95fr;
-    gap: 4rem;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 5rem;
     align-items: center;
 }
 
