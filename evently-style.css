@@ -229,17 +229,18 @@ p {
    ========================================== */
 
 .hero {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 2rem 5rem;
+    padding: 4rem 1rem 5rem;
     display: grid;
-    grid-template-columns: 1.25fr 0.75fr;
-    gap: 3rem;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 4rem;
     align-items: center;
 }
 
 .hero-content {
     padding-block: 1rem;
+    min-width: 0;
 }
 
 .hero-content h1 {
@@ -281,6 +282,7 @@ p {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
+    min-width: 0;
 }
 
 .hero-gallery img {
