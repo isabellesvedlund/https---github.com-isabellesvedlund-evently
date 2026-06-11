@@ -109,7 +109,6 @@ ul {
 /*** Global/base styles ***/
 
 .header {
-    max-width: 1320px;
     margin: 0 auto;
     padding: 1.25rem 1rem;
     display: flex;
@@ -169,9 +168,15 @@ p {
    ========================================== */
 
 .container {
-    max-width: 1320px;
     margin: 0 auto;
-    padding-inline: 1.5rem;
+    padding-inline: 2rem;
+}
+
+.header,
+.hero,
+.container,
+.search-wrapper {
+    max-width: 1440px;
 }
 
 /* Kevin Powell's content-grid layout pattern */
@@ -230,9 +235,8 @@ p {
    ========================================== */
 
 .hero {
-    max-width: 1320px;
     margin: 0 auto;
-    padding: 4rem 1rem 5rem;
+    padding: 3rem 2rem 3.5rem;
     display: grid;
     grid-template-columns: 1.15fr 1fr;
     gap: 5rem;
@@ -308,11 +312,10 @@ p {
 
 .search-section {
     background: var(--purple-100);
-    padding: 2.5rem 0;
+    padding: 1.75rem 0;
 }
 
 .search-wrapper {
-    max-width: 1320px;
     margin: 0 auto;
     background: transparent;
     padding: 0;
@@ -323,7 +326,7 @@ p {
 .search-wrapper h2 {
     font-size: 1.8rem;
     font-weight: 800;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .search-form {
