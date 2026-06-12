@@ -385,6 +385,15 @@ p {
     color: var(--purple-600);
     font-weight: 700;
     font-size: 0.95rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: 4px;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.section-header a:hover {
+    background: var(--gray-100);
 }
 
 .events-grid {
@@ -673,6 +682,14 @@ footer p {
     border-radius: 4px;
     font-weight: 700;
     cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background: var(--gray-100);
+    border-color: var(--purple-800);
 }
 
 .hero-buttons .btn-primary,
