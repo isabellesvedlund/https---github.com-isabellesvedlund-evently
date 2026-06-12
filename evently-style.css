@@ -40,15 +40,47 @@
     Basic reset & typography
    ========================================== */
 
+/* ==========================================
+    SHARED CLASSES
+   ========================================== */
+
+/* align-items;center */
+.logo,
+.header,
+.header-actions,
+.section-header,
+.event-meta,
+.features-grid,
+.feature,
+.footer-logo,
+.icon-btn,
+.menu-btn {
+    align-items: center;
+}
+
+/* display: flex; */
+
+.logo,
+.logo-icon,
+.nav,
+.section-header,
+.header,
+.header-actions,
+.hero-buttons,
+.search-form-label,
+.section-header,
+.event-meta,
+.footer-logo,
+.footer-logo-icon {
+    display: flex;
+}
+
 /* Logo */
 .logo {
-    display: flex;
-    align-items: center;
     gap: 0.5rem;
 }
 
 .logo-icon {
-    display: flex;
     color: var(--gray-900);
 }
 
@@ -64,7 +96,6 @@
 }
 
 .nav {
-    display: flex;
     gap: 2rem;
 }
 
@@ -86,7 +117,6 @@
     margin: 0;
     padding: 0;
     font: inherit;
-
     box-sizing: border-box;
 }
 
@@ -111,15 +141,11 @@ ul {
     width: 100%;
     margin: 0 auto;
     padding: 1.25rem 2rem;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     background: white;
 }
 
 .header-actions {
-    display: flex;
-    align-items: center;
     gap: 1rem;
 }
 
@@ -226,7 +252,6 @@ p {
 }
 
 .hero-buttons {
-    display: flex;
     gap: 1.25rem;
     margin-top: 1.75rem;
 }
@@ -286,7 +311,6 @@ p {
 }
 
 .search-form label {
-    display: flex;
     flex-direction: column;
     gap: 0.45rem;
     font-weight: 700;
@@ -314,9 +338,7 @@ p {
 }
 
 .section-header {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 1.75rem;
 }
 
@@ -377,10 +399,7 @@ p {
 }
 
 .event-meta {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-
     margin-bottom: 1rem;
 }
 
@@ -446,14 +465,12 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
-    align-items: center;
 }
 
 .feature {
     display: grid;
     grid-template-columns: 64px 1fr;
     gap: 1.5rem;
-    align-items: center;
 }
 
 .feature-icon {
@@ -532,8 +549,6 @@ footer p {
 }
 
 .footer-logo {
-    display: flex;
-    align-items: center;
     gap: 0.5rem;
     margin-bottom: 1.25rem;
     font-weight: 800;
@@ -542,7 +557,6 @@ footer p {
 }
 
 .footer-logo-icon {
-    display: flex;
     color: var(--white);
 }
 
@@ -606,7 +620,6 @@ footer p {
     background: transparent;
     color: var(--purple-600);
     cursor: pointer;
-    align-items: center;
     justify-content: center;
 }
 
